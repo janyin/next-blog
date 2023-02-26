@@ -1,4 +1,5 @@
 import Head from "next/head";
+import Link from "next/link";
 import { Inter } from "@next/font/google";
 import styles from "@/styles/Home.module.scss";
 
@@ -27,16 +28,16 @@ export default function Home() {
                 </div>
 
                 <div className={styles.grid}>
-                    <a href="/experience" className={styles.card}>
+                    <Link href="/experience" className={styles.card}>
                         <h2 className={inter.className}>
                             Experience <span>-&gt;</span>
                         </h2>
                         <p className={inter.className}>
                             My work experience as software engineer
                         </p>
-                    </a>
+                    </Link>
 
-                    <a href="/blog" className={styles.card}>
+                    <Link href="/blog" className={styles.card}>
                         <h2 className={inter.className}>
                             Blog <span>-&gt;</span>
                         </h2>
@@ -44,9 +45,9 @@ export default function Home() {
                             Some of my thoughts and ideas about software
                             development and life
                         </p>
-                    </a>
+                    </Link>
 
-                    <a href="/community" className={styles.card}>
+                    <Link href="/community" className={styles.card}>
                         <h2 className={inter.className}>
                             Community <span>-&gt;</span>
                         </h2>
@@ -54,7 +55,7 @@ export default function Home() {
                             My open source projects and contributions in Github
                             and StackOverflow
                         </p>
-                    </a>
+                    </Link>
                 </div>
             </main>
         </>
